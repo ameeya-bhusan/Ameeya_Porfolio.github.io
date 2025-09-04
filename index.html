@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ameeya — Personal Portfolio for Marriage Introduction</title>
+  <meta name="description" content="A concise, respectful introduction to Ameeya—background, family, education, values, career, and contact details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#009DE0',
+              dark: '#3B1C13',
+              light: '#E6F7FD'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial']
+          },
+          boxShadow: {
+            soft: '0 8px 30px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Print-friendly */
+    @media print {
+      .no-print { display: none !important; }
+      body { color: #000; }
+      a[href]:after { content: " (" attr(href) ")"; font-size: 10px; }
+      .card { box-shadow: none !important; border: 1px solid #ddd; }
+    }
+  </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="text-xl font-extrabold tracking-tight text-brand-primary">Ameeya</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-brand-primary">About</a>
+        <a href="#family" class="hover:text-brand-primary">Family</a>
+        <a href="#education" class="hover:text-brand-primary">Education</a>
+        <a href="#career" class="hover:text-brand-primary">Career</a>
+        <a href="#values" class="hover:text-brand-primary">Values</a>
+        <a href="#lifestyle" class="hover:text-brand-primary">Lifestyle</a>
+        <a href="#photos" class="hover:text-brand-primary">Photos</a>
+        <a href="#documents" class="hover:text-brand-primary">Documents</a>
+        <a href="#contact" class="hover:text-brand-primary">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="printBtn" class="no-print inline-flex items-center rounded-xl bg-brand-primary px-4 py-2 text-white text-sm font-medium shadow-soft hover:opacity-90">Download PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-gradient-to-b from-brand.light to-white">
+    <div class="max-w-6xl mx-auto px-4 py-12 md:py-16 grid md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">Namaste 👋 I’m <span class="text-brand-primary">Ameeya Bhusan Sahoo</span></h1>
+        <p class="mt-4 text-lg text-slate-700">Doctoral candidate in computational materials & quantum computing at the University of Bordeaux (France). This page is a respectful, transparent introduction for families considering a marriage conversation.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="inline-flex items-center rounded-full bg-white border border-brand-primary/30 text-brand-primary px-3 py-1 text-sm">Born: DD MMM YYYY</span>
+          <span class="inline-flex items-center rounded-full bg-white border border-brand-primary/30 text-brand-primary px-3 py-1 text-sm">Height: ___ cm</span>
+          <span class="inline-flex items-center rounded-full bg-white border border-brand-primary/30 text-brand-primary px-3 py-1 text-sm">Native: City, Odisha, India</span>
+          <span class="inline-flex items-center rounded-full bg-white border border-brand-primary/30 text-brand-primary px-3 py-1 text-sm">Lives in: Bordeaux, France</span>
+        </div>
+      </div>
+      <div class="md:col-span-1">
+        <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-soft border bg-white">
+          <!-- Replace src with your photo URL -->
+          <img src="https://placehold.co/600x800/png" alt="Ameeya portrait" class="w-full h-full object-cover" />
+        </div>
+        <p class="text-xs text-slate-500 mt-2">Tip: Host your photo in the repo (e.g., <code>/assets/profile.jpg</code>) and update the src.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Facts -->
+  <section class="py-8">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-4">
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="text-sm font-semibold text-slate-500">Education</h3>
+        <p class="mt-1 font-medium">MSc Theoretical & Computational Chemistry</p>
+        <p class="text-sm text-slate-600">PhD in progress (Bordeaux)</p>
+      </div>
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="text-sm font-semibold text-slate-500">Profession</h3>
+        <p class="mt-1 font-medium">Doctoral Researcher</p>
+        <p class="text-sm text-slate-600">Quantum–classical simulation</p>
+      </div>
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="text-sm font-semibold text-slate-500">Languages</h3>
+        <p class="mt-1 font-medium">English, French (learning), Odia, Hindi</p>
+      </div>
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="text-sm font-semibold text-slate-500">Lifestyle</h3>
+        <p class="mt-1 font-medium">Non‑smoker, ____</p>
+        <p class="text-sm text-slate-600">Diet: Veg/Non‑veg (specify)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">About Me</h2>
+      <p class="mt-4 leading-relaxed">I value sincerity, learning, and family. My research bridges first‑principles simulations (BigDFT, VASP) with quantum algorithms (VQE) to study strongly correlated materials. Outside work, I enjoy reading, photography, and long walks. I’m looking for a partner who is kind, curious, and supportive, with mutual respect for both families.</p>
+    </div>
+  </section>
+
+  <!-- Family -->
+  <section id="family" class="py-12 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Family</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">Father</h3>
+          <p class="text-sm text-slate-600">Name, occupation, brief background.</p>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">Mother</h3>
+          <p class="text-sm text-slate-600">Name, occupation, brief background.</p>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">Siblings</h3>
+          <p class="text-sm text-slate-600">Names, education/profession, marital status.</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-slate-600">Extended family, native place, and values (e.g., education‑focused, close‑knit, progressive/traditional blend).</p>
+    </div>
+  </section>
+
+  <!-- Education & Career -->
+  <section id="education" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Education</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">PhD — University of Bordeaux, France (2025–2028)</h3>
+          <p class="text-sm text-slate-600">Hybrid quantum–classical simulations for materials; advisors: S. Burdin, M. Saubanère; collaborations with CEA.</p>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">MSc — Theoretical & Computational Chemistry</h3>
+          <p class="text-sm text-slate-600">Focus on electronic structure and simulations.</p>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">BSc — Chemistry/Physics (specify)</h3>
+          <p class="text-sm text-slate-600">University, year, highlights.</p>
+        </div>
+      </div>
+
+      <h2 id="career" class="text-2xl font-bold mt-12">Career & Achievements</h2>
+      <ul class="mt-6 space-y-4">
+        <li class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <div class="flex items-start justify-between">
+            <div>
+              <p class="font-semibold">Doctoral Researcher — LOMA, University of Bordeaux</p>
+              <p class="text-sm text-slate-600">2025–present · Publications, talks, posters (Les Houches 2025), collaborations.</p>
+            </div>
+            <span class="text-xs text-slate-500">Bordeaux, France</span>
+          </div>
+        </li>
+        <li class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <p class="font-semibold">Prior Research/Industry Roles</p>
+          <p class="text-sm text-slate-600">Brief bullet points of responsibilities and achievements (2–4 lines each).</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Research & Publications (optional) -->
+  <section id="research" class="py-12 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Research Snapshot</h2>
+      <p class="mt-4 text-sm text-slate-700">Keywords: BigDFT, VASP, Hamiltonian sparsity, VQE, UCCSD, transition‑metal oxides.</p>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">Selected Publications</h3>
+          <ul class="mt-2 list-disc list-inside text-sm text-slate-700">
+            <li>Author, Title, Journal (Year).</li>
+            <li>Author, Title, Conference (Year).</li>
+          </ul>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <h3 class="font-semibold">Talks & Posters</h3>
+          <ul class="mt-2 list-disc list-inside text-sm text-slate-700">
+            <li>Les Houches School (Sep 2025) — Poster.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values & Expectations -->
+  <section id="values" class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Personal Values & Expectations</h2>
+      <ul class="mt-4 grid md:grid-cols-2 gap-4 text-sm">
+        <li class="card p-4 bg-white rounded-2xl shadow-soft border"><strong>Family:</strong> Respect for both families; openness and empathy.</li>
+        <li class="card p-4 bg-white rounded-2xl shadow-soft border"><strong>Education & Career:</strong> Support each other’s goals; celebrate growth.</li>
+        <li class="card p-4 bg-white rounded-2xl shadow-soft border"><strong>Lifestyle:</strong> Health, balance, and simple living.</li>
+        <li class="card p-4 bg-white rounded-2xl shadow-soft border"><strong>Partnership:</strong> Shared decisions, trust, kindness, and humor.</li>
+      </ul>
+      <p class="mt-4 text-sm text-slate-600">If relevant, note preferences (e.g., location flexibility, language, family traditions) respectfully—avoid anything that could sound discriminatory.</p>
+    </div>
+  </section>
+
+  <!-- Lifestyle & Health -->
+  <section id="lifestyle" class="py-12 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="font-semibold">Daily Life</h3>
+        <p class="text-sm text-slate-600">Work routine, hobbies (e.g., walks, reading, photography), community.</p>
+      </div>
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="font-semibold">Health</h3>
+        <p class="text-sm text-slate-600">General health status, blood group, medical history (share only what you’re comfortable with).</p>
+      </div>
+      <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+        <h3 class="font-semibold">Future Plans</h3>
+        <p class="text-sm text-slate-600">Career aspirations (e.g., academia/industry), preferred places to live, timeline.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos -->
+  <section id="photos" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Photos</h2>
+      <p class="mt-2 text-sm text-slate-600">Keep it simple and respectful: 3–6 clear photos (portrait, with family, casual). Avoid sensitive data in images (IDs, badges, house numbers).</p>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://placehold.co/600x400/png" class="rounded-2xl border shadow-soft" alt="Photo 1" />
+        <img src="https://placehold.co/600x400/png" class="rounded-2xl border shadow-soft" alt="Photo 2" />
+        <img src="https://placehold.co/600x400/png" class="rounded-2xl border shadow-soft" alt="Photo 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section id="documents" class="py-12 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Documents</h2>
+      <p class="mt-2 text-sm text-slate-600">Add links to PDFs you’re comfortable sharing (CV, degrees, certificates). For privacy, consider redacting sensitive numbers.</p>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li>• <a href="#" class="text-brand-primary underline">Curriculum Vitae (PDF)</a></li>
+        <li>• <a href="#" class="text-brand-primary underline">Degree Certificates (PDF)</a></li>
+        <li>• <a href="#" class="text-brand-primary underline">Letters/References (optional)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section id="references" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">References (Optional)</h2>
+      <p class="mt-2 text-sm text-slate-600">Two or three people who can speak to my character (with consent). Provide email/phone only if they agree to be contacted.</p>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <p class="font-medium">Name — Role, Organization</p>
+          <p class="text-sm text-slate-600">Email · Phone</p>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <p class="font-medium">Name — Relation</p>
+          <p class="text-sm text-slate-600">Email · Phone</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 bg-white border-t">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <p class="text-sm"><span class="font-semibold">Email:</span> <a href="mailto:you@example.com" class="text-brand-primary underline">you@example.com</a></p>
+          <p class="text-sm mt-2"><span class="font-semibold">Phone/WhatsApp:</span> +33‑X‑XX‑XX‑XX‑XX (France) · +91‑XXXXXXXXXX (India)</p>
+          <p class="text-sm mt-2"><span class="font-semibold">Location:</span> Bordeaux, France (open to relocate)</p>
+        </div>
+        <div class="card p-5 bg-white rounded-2xl shadow-soft border">
+          <p class="text-sm"><span class="font-semibold">Availability:</span> Parents can contact me directly or through relatives. I’m happy to arrange a respectful family call.</p>
+          <button id="shareBtn" class="no-print mt-3 inline-flex items-center rounded-xl border px-4 py-2 text-sm font-medium hover:bg-slate-50">Copy Page Link</button>
+          <p id="shareMsg" class="text-xs text-slate-500 mt-2 hidden">Link copied to clipboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-slate-500">
+      <p>© <span id="year"></span> Ameeya Bhusan Sahoo · This page is intended only for respectful marriage introductions. Please do not redistribute without consent.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Print
+    document.getElementById('printBtn')?.addEventListener('click', () => window.print());
+    // Share
+    document.getElementById('shareBtn')?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        document.getElementById('shareMsg').classList.remove('hidden');
+        setTimeout(()=>document.getElementById('shareMsg').classList.add('hidden'), 2000);
+      } catch (e) {
+        alert('Copy failed. You can copy the URL from the address bar.');
+      }
+    });
+  </script>
+
+  <!-- Minimal JSON-LD (optional, helps SEO if you ever make it public) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ameeya Bhusan Sahoo",
+    "jobTitle": "Doctoral Researcher",
+    "affiliation": {"@type": "Organization", "name": "University of Bordeaux"},
+    "address": {"@type": "PostalAddress", "addressLocality": "Bordeaux", "addressCountry": "France"},
+    "email": "you@example.com",
+    "sameAs": []
+  }
+  </script>
+</body>
+</html>
